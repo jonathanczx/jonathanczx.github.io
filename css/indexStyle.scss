@@ -5,6 +5,12 @@ body {
   padding: 0 3em 3em 3em;
 }
 
+@media screen and (max-width: 645px){
+	.contactDet {
+		position: fixed;
+	}
+}
+
 hr {
 	margin-left: 0;
 	margin-right: 0;
@@ -73,6 +79,7 @@ div, header, footer, section {
 	position: absolute;
 	bottom: 0;
 	letter-spacing: 0.25em;
+	white-space: nowrap;
 }
 
 .sectionHeading{
