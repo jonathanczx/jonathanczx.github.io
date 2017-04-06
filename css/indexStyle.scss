@@ -5,12 +5,6 @@ body {
   padding: 0 3em 3em 3em;
 }
 
-@media screen and (max-width: 645px){
-	.contactDet {
-		position: fixed;
-	}
-}
-
 hr {
 	margin-left: 0;
 	margin-right: 0;
@@ -45,6 +39,8 @@ div, header, footer, section {
 	width: 80%;
 	margin: 0 auto;
 }
+
+
 
 .pageContainer, .sectionHeading, .headerContent, .mainContent, .footerContent, .aboutMe{
 	display: flex;
@@ -128,5 +124,28 @@ div, header, footer, section {
 	align-items: space-around;
 	.sectionHeading{
 		@include quietLinks;
+	}
+}
+
+@media screen and (max-width: 645px){
+	body {
+		padding: 0 1em;
+	}
+	.wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.sectionHeading {
+		padding: 2em 0;
+	}
+	.mainContent {
+		padding: 0;
+	}
+	.firstName, .lastName{
+		font-size: 1.5rem;
+	}
+	.contactDet {
+		font-size: 0.75rem;
 	}
 }

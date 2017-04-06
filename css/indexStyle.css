@@ -2,9 +2,6 @@
 body {
   padding: 0 3em 3em 3em; }
 
-@media screen and (max-width: 645px) {
-  .contactDet {
-    position: fixed; } }
 hr {
   margin-left: 0;
   margin-right: 0; }
@@ -108,5 +105,25 @@ div, header, footer, section {
   .footerContent .sectionHeading a, .footerContent .sectionHeading a:hover {
     color: #666666;
     text-decoration: none; }
+
+@media screen and (max-width: 645px) {
+  body {
+    padding: 0 1em; }
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto; }
+
+  .sectionHeading {
+    padding: 2em 0; }
+
+  .mainContent {
+    padding: 0; }
+
+  .firstName, .lastName {
+    font-size: 1.5rem; }
+
+  .contactDet {
+    font-size: 0.75rem; } }
 
 /*# sourceMappingURL=indexStyle.css.map */
