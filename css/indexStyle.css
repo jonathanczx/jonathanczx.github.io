@@ -1,0 +1,108 @@
+/** Built with SASS **/
+body {
+  padding: 0 3em 3em 3em; }
+
+hr {
+  margin-left: 0;
+  margin-right: 0; }
+
+div, header, footer, section {
+  font-family: 'ralewayregular', Arial;
+  font-size: 16px;
+  color: #666666; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto; }
+
+.pageContainer, .sectionHeading, .headerContent, .mainContent, .footerContent, .aboutMe {
+  display: flex; }
+
+.pageContainer {
+  flex-direction: column; }
+
+.headerContent {
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
+  position: relative; }
+  .headerContent .firstName {
+    font-family: 'ralewayextralight', Arial;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    -webkit-margin: 0;
+    -moz-margin: 0;
+    -ms-margin: 0;
+    margin: 0; }
+    .headerContent .firstName a, .headerContent .firstName a:hover {
+      color: #666666;
+      text-decoration: none; }
+  .headerContent .lastName {
+    font-family: 'ralewaymedium', Arial;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    -webkit-margin: 0;
+    -moz-margin: 0;
+    -ms-margin: 0;
+    margin: 0; }
+    .headerContent .lastName a, .headerContent .lastName a:hover {
+      color: #666666;
+      text-decoration: none; }
+
+.contactDet {
+  position: absolute;
+  bottom: 0;
+  letter-spacing: 0.25em; }
+
+.sectionHeading {
+  justify-content: center;
+  padding: 2em; }
+
+.sectionTitle {
+  font-family: 'ralewaymedium', Arial;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 0.25em;
+  -webkit-margin: 0;
+  -moz-margin: 0;
+  -ms-margin: 0;
+  margin: 0;
+  border-bottom: 1px solid #E0E0E0; }
+
+.aboutMe .container {
+  justify-content: center; }
+
+.mainContent {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 2em; }
+  .mainContent .row {
+    display: flex;
+    flex-direction: row;
+    -webkit-margin: 0;
+    -moz-margin: 0;
+    -ms-margin: 0;
+    margin: 0; }
+    .mainContent .row .left {
+      text-align: left;
+      flex: 0.5;
+      -webkit-margin: 0.5em;
+      -moz-margin: 0.5em;
+      -ms-margin: 0.5em;
+      margin: 0.5em; }
+    .mainContent .row .right {
+      text-align: right;
+      flex: 0.5;
+      -webkit-margin: 0.5em;
+      -moz-margin: 0.5em;
+      -ms-margin: 0.5em;
+      margin: 0.5em; }
+
+.footerContent {
+  flex-direction: column;
+  align-items: space-around; }
+  .footerContent .sectionHeading a, .footerContent .sectionHeading a:hover {
+    color: #666666;
+    text-decoration: none; }
+
+/*# sourceMappingURL=indexStyle.css.map */

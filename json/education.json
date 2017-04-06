@@ -1,0 +1,62 @@
+{"education":[
+	{
+		"School" : "The University of Queensland",
+		"Degree" : "Bachelor of Information Technology",
+		"Duration" : "Mar 2015 - Dec 2016",
+		"Country" : "Australia",
+		"Description" : "The highlight of my life so far, I have never enjoyed education like this before, it's amazing! "
+	},
+	{
+		"School" : "Temasek Polytechnic",
+		"Degree" : "Diploma in Financial Business and Informatics",
+		"Duration" : "Apr 2009 - May 2012",
+		"Country" : "Singapore",
+		"Description" : "In the midst of pursuing this diploma, I found my passion for web development!"
+	},
+	{
+		"School" : "St. Hilda's Secondary School",
+		"Degree" : "GCE Ordinary level",
+		"Duration" : "Jan 2004 - Dec 2008",
+		"Country" : "Singapore",
+		"Description" : "Top 4 subjects with grades of ABBB, with Math being the best subject."
+	}
+
+],
+"skills":[
+	{
+		"Skill" : "HTML",
+		"Expertise" : 4
+	},
+	{
+		"Skill" : "CSS",
+		"Expertise" : 4
+	},
+	{
+		"Skill" : "JavaScript",
+		"Expertise" : 3
+	},
+	{
+		"Skill" : "Python",
+		"Expertise" : 3
+	},
+	{
+		"Skill" : "PHP",
+		"Expertise" : 4
+	},
+	{
+		"Skill" : "AI",
+		"Expertise" : 4
+	},
+	{
+		"Skill" : "VBA Excel",
+		"Expertise" : 4
+	},
+	{
+		"Skill" : "ASP.NET C#",
+		"Expertise" : 3
+	},
+	{
+		"Skill" : "Java",
+		"Expertise" : 2
+	}
+]}
