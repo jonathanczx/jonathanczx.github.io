@@ -98,6 +98,8 @@ div, header, footer, section {
       -moz-margin: 0.5em;
       -ms-margin: 0.5em;
       margin: 0.5em; }
+    .mainContent .row:hover {
+      background-color: #E0E0E0; }
 
 .footerContent {
   flex-direction: column;
@@ -121,9 +123,11 @@ div, header, footer, section {
     padding: 0; }
 
   .firstName, .lastName {
+    transition: font-size 0.4s ease;
     font-size: 1.5rem; }
 
   .contactDet {
+    transition: font-size 0.4s ease;
     font-size: 0.75rem; } }
 
 /*# sourceMappingURL=indexStyle.css.map */
