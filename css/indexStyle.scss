@@ -2,7 +2,7 @@
 $sectionPadding: 2em;
 
 body {
-  padding: 0 3em 3em 3em;
+  padding: 0;
 }
 
 hr {
@@ -36,7 +36,7 @@ div, header, footer, section {
 }
 
 .wrapper {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -98,10 +98,19 @@ div, header, footer, section {
 	}
 }
 
+.sideBySideWrap {
+	display: flex;
+	flex-direction: row;
+}
+
+.sideBySide {
+	flex: 0.5;
+}
+
 .mainContent {
 	flex-direction: column;
 	align-items: stretch;
-	.row {
+	.row, .projRow {
 		display: flex;
 		flex-direction: row;
 		@include margin(0);
@@ -115,12 +124,46 @@ div, header, footer, section {
 			flex: 0.5;
 			@include margin(0.5em);
 		}
+		.projExLeft{
+			text-align: left;
+			flex: 0.25;
+			@include margin(0.5em);
+		}
+		.projExRight{
+			text-align: justify;
+			flex: 0.75;
+			@include margin(0.5em);
+		}
 		&:hover {
 			background-color: #E0E0E0;
 		}
 	}
+	//skills section
+	.skillsWrap{
+		flex-direction: row;
+		display: flex;
+
+		.skillsColumn{
+			flex: 1;
+			flex-direction: column;
+			@include margin(0);
+
+			.skillsHeader{
+				font-size: 18px;
+				font-weight: bold;
+				padding: 0 0 0 2em;
+			}
+
+			ul {
+				list-style: none;
+			}
+		}
+	}
+
 	padding: 0 $sectionPadding;
 }
+
+
 
 .footerContent {
 	flex-direction: column;
@@ -130,7 +173,8 @@ div, header, footer, section {
 	}
 }
 
-@media screen and (max-width: 645px){
+@media all and (max-width: 645px) {
+	/*---- Mobile Styling ---*/
 	body {
 		padding: 0 1em;
 	}
@@ -142,9 +186,19 @@ div, header, footer, section {
 	.sectionHeading {
 		padding: 2em 0;
 	}
+
+	.sideBySideWrap{
+		flex-direction: column;
+	}
 	.mainContent {
 		padding: 0;
 	}
+
+	.sectionHeading .sectionTitle{
+		transition: font-size 0.4s ease;
+		font-size: 18px;
+	}
+
 	.firstName, .lastName{
 		transition: font-size 0.4s ease;
 		font-size: 1.5rem;
@@ -152,5 +206,9 @@ div, header, footer, section {
 	.contactDet {
 		transition: font-size 0.4s ease;
 		font-size: 0.75rem;
+	}
+
+	.mainContent .skillsWrap {
+		flex-wrap: wrap row;
 	}
 }

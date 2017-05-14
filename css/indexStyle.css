@@ -1,6 +1,6 @@
 /** Built with SASS **/
 body {
-  padding: 0 3em 3em 3em; }
+  padding: 0; }
 
 hr {
   margin-left: 0;
@@ -12,7 +12,7 @@ div, header, footer, section {
   color: #666666; }
 
 .wrapper {
-  width: 80%;
+  width: 90%;
   margin: 0 auto; }
 
 .pageContainer, .sectionHeading, .headerContent, .mainContent, .footerContent, .aboutMe {
@@ -73,33 +73,70 @@ div, header, footer, section {
 .aboutMe .container {
   justify-content: center; }
 
+.sideBySideWrap {
+  display: flex;
+  flex-direction: row; }
+
+.sideBySide {
+  flex: 0.5; }
+
 .mainContent {
   flex-direction: column;
   align-items: stretch;
   padding: 0 2em; }
-  .mainContent .row {
+  .mainContent .row, .mainContent .projRow {
     display: flex;
     flex-direction: row;
     -webkit-margin: 0;
     -moz-margin: 0;
     -ms-margin: 0;
     margin: 0; }
-    .mainContent .row .left {
+    .mainContent .row .left, .mainContent .projRow .left {
       text-align: left;
       flex: 0.5;
       -webkit-margin: 0.5em;
       -moz-margin: 0.5em;
       -ms-margin: 0.5em;
       margin: 0.5em; }
-    .mainContent .row .right {
+    .mainContent .row .right, .mainContent .projRow .right {
       text-align: right;
       flex: 0.5;
       -webkit-margin: 0.5em;
       -moz-margin: 0.5em;
       -ms-margin: 0.5em;
       margin: 0.5em; }
-    .mainContent .row:hover {
+    .mainContent .row .projExLeft, .mainContent .projRow .projExLeft {
+      text-align: left;
+      flex: 0.25;
+      -webkit-margin: 0.5em;
+      -moz-margin: 0.5em;
+      -ms-margin: 0.5em;
+      margin: 0.5em; }
+    .mainContent .row .projExRight, .mainContent .projRow .projExRight {
+      text-align: justify;
+      flex: 0.75;
+      -webkit-margin: 0.5em;
+      -moz-margin: 0.5em;
+      -ms-margin: 0.5em;
+      margin: 0.5em; }
+    .mainContent .row:hover, .mainContent .projRow:hover {
       background-color: #E0E0E0; }
+  .mainContent .skillsWrap {
+    flex-direction: row;
+    display: flex; }
+    .mainContent .skillsWrap .skillsColumn {
+      flex: 1;
+      flex-direction: column;
+      -webkit-margin: 0;
+      -moz-margin: 0;
+      -ms-margin: 0;
+      margin: 0; }
+      .mainContent .skillsWrap .skillsColumn .skillsHeader {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0 0 0 2em; }
+      .mainContent .skillsWrap .skillsColumn ul {
+        list-style: none; }
 
 .footerContent {
   flex-direction: column;
@@ -108,7 +145,8 @@ div, header, footer, section {
     color: #666666;
     text-decoration: none; }
 
-@media screen and (max-width: 645px) {
+@media all and (max-width: 645px) {
+  /*---- Mobile Styling ---*/
   body {
     padding: 0 1em; }
 
@@ -119,8 +157,15 @@ div, header, footer, section {
   .sectionHeading {
     padding: 2em 0; }
 
+  .sideBySideWrap {
+    flex-direction: column; }
+
   .mainContent {
     padding: 0; }
+
+  .sectionHeading .sectionTitle {
+    transition: font-size 0.4s ease;
+    font-size: 18px; }
 
   .firstName, .lastName {
     transition: font-size 0.4s ease;
@@ -128,6 +173,9 @@ div, header, footer, section {
 
   .contactDet {
     transition: font-size 0.4s ease;
-    font-size: 0.75rem; } }
+    font-size: 0.75rem; }
+
+  .mainContent .skillsWrap {
+    flex-wrap: wrap row; } }
 
 /*# sourceMappingURL=indexStyle.css.map */
