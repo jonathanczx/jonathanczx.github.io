@@ -1,6 +1,7 @@
 /** Built with SASS **/
 body {
-  padding: 0; }
+  padding: 0;
+  color: 'black'; }
 
 hr {
   margin-left: 0;
@@ -14,6 +15,9 @@ div, header, footer, section {
 .wrapper {
   width: 90%;
   margin: 0 auto; }
+
+.hidden {
+  display: none; }
 
 .pageContainer, .sectionHeading, .headerContent, .mainContent, .footerContent, .aboutMe {
   display: flex; }

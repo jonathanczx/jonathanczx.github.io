@@ -3,6 +3,7 @@ $sectionPadding: 2em;
 
 body {
   padding: 0;
+  color: 'black';
 }
 
 hr {
@@ -40,7 +41,9 @@ div, header, footer, section {
 	margin: 0 auto;
 }
 
-
+.hidden{
+	display: none;
+}
 
 .pageContainer, .sectionHeading, .headerContent, .mainContent, .footerContent, .aboutMe{
 	display: flex;
@@ -61,6 +64,7 @@ div, header, footer, section {
 			letter-spacing: 0.2em;
 			@include margin(0);
 			@include quietLinks;
+
 		}
 		.lastName {
 			font-family: 'ralewaymedium', Arial;
