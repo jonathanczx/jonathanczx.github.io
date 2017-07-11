@@ -117,6 +117,10 @@ div, header, footer, section {
 	.row, .projRow {
 		display: flex;
 		flex-direction: row;
+		background-color: #fff;
+		.expanded {
+			background-color: #E0E0E0;
+		}
 		@include margin(0);
 		.left{
 			text-align: left;
@@ -167,13 +171,21 @@ div, header, footer, section {
 	padding: 0 $sectionPadding;
 }
 
-
+.expansion {
+	display: none;
+}
 
 .footerContent {
 	flex-direction: column;
 	align-items: space-around;
+	
 	.sectionHeading{
 		@include quietLinks;
+		flex-direction: row;
+		
+		.icon{
+			@include margin(0.5em);
+		}
 	}
 }
 

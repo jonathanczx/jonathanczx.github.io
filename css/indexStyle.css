@@ -91,10 +91,13 @@ div, header, footer, section {
   .mainContent .row, .mainContent .projRow {
     display: flex;
     flex-direction: row;
+    background-color: #fff;
     -webkit-margin: 0;
     -moz-margin: 0;
     -ms-margin: 0;
     margin: 0; }
+    .mainContent .row .expanded, .mainContent .projRow .expanded {
+      background-color: #E0E0E0; }
     .mainContent .row .left, .mainContent .projRow .left {
       text-align: left;
       flex: 0.5;
@@ -142,12 +145,22 @@ div, header, footer, section {
       .mainContent .skillsWrap .skillsColumn ul {
         list-style: none; }
 
+.expansion {
+  display: none; }
+
 .footerContent {
   flex-direction: column;
   align-items: space-around; }
-  .footerContent .sectionHeading a, .footerContent .sectionHeading a:hover {
-    color: #666666;
-    text-decoration: none; }
+  .footerContent .sectionHeading {
+    flex-direction: row; }
+    .footerContent .sectionHeading a, .footerContent .sectionHeading a:hover {
+      color: #666666;
+      text-decoration: none; }
+    .footerContent .sectionHeading .icon {
+      -webkit-margin: 0.5em;
+      -moz-margin: 0.5em;
+      -ms-margin: 0.5em;
+      margin: 0.5em; }
 
 @media all and (max-width: 645px) {
   /*---- Mobile Styling ---*/
