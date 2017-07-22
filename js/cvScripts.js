@@ -7,7 +7,7 @@ $(document).ready(function(){
 	  console.log("Row Clicked");
 	  if($(this).hasClass("expanded"))
 	  {
-	  	$(this).removeClass("expanded");
+	  	$(this).removeClass("expanded", );
 	  	$(this).css("background-color", "#FFF");
 	  }
 	  else 

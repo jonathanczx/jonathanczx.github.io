@@ -146,7 +146,9 @@ div, header, footer, section {
         list-style: none; }
 
 .expansion {
-  display: none; }
+  display: none;
+  padding: 0.5em;
+  font-size: 14px; }
 
 .footerContent {
   flex-direction: column;
@@ -166,33 +168,23 @@ div, header, footer, section {
   /*---- Mobile Styling ---*/
   body {
     padding: 0 1em; }
-
   .wrapper {
     width: 90%;
     margin: 0 auto; }
-
   .sectionHeading {
     padding: 2em 0; }
-
   .sideBySideWrap {
     flex-direction: column; }
-
   .mainContent {
     padding: 0; }
-
   .sectionHeading .sectionTitle {
     transition: font-size 0.4s ease;
     font-size: 18px; }
-
   .firstName, .lastName {
     transition: font-size 0.4s ease;
     font-size: 1.5rem; }
-
   .contactDet {
     transition: font-size 0.4s ease;
     font-size: 0.75rem; }
-
   .mainContent .skillsWrap {
     flex-wrap: wrap row; } }
-
-/*# sourceMappingURL=indexStyle.css.map */
