@@ -16,6 +16,15 @@ $(document).ready(function(){
 	  	$(this).css("background-color", "#E0E0E0");
 	  }
 	  $(this).next(".expansion").slideToggle();
-  });
+	});
 });
+
+class flipCard {
+	constructor (width, height, text){
+		this.width 	= width;
+		this.height = height;
+		this.text 	= text;
+	}
+
+}
 
