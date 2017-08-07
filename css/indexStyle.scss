@@ -175,6 +175,9 @@ div, header, footer, section {
 	display: none;
 	padding: 0.5em;
 	font-size: 14px;
+	.expansionHeader {
+		font-size: 16px;
+	}
 }
 
 .footerContent {
