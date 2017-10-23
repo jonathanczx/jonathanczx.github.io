@@ -114,18 +114,22 @@ div, header, footer, section {
       margin: 0.5em; }
     .mainContent .row .projExLeft, .mainContent .projRow .projExLeft {
       text-align: left;
-      flex: 0.25;
+      flex: 0.3;
       -webkit-margin: 0.5em;
       -moz-margin: 0.5em;
       -ms-margin: 0.5em;
       margin: 0.5em; }
     .mainContent .row .projExRight, .mainContent .projRow .projExRight {
-      text-align: justify;
-      flex: 0.75;
+      text-align: left;
+      flex: 0.7;
       -webkit-margin: 0.5em;
       -moz-margin: 0.5em;
       -ms-margin: 0.5em;
       margin: 0.5em; }
+      .mainContent .row .projExRight ul, .mainContent .projRow .projExRight ul {
+        padding: 0; }
+      .mainContent .row .projExRight ul li, .mainContent .projRow .projExRight ul li {
+        list-style: none; }
     .mainContent .row:hover, .mainContent .projRow:hover {
       background-color: #E0E0E0; }
   .mainContent .skillsWrap {

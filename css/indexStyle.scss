@@ -134,13 +134,19 @@ div, header, footer, section {
 		}
 		.projExLeft{
 			text-align: left;
-			flex: 0.25;
+			flex: 0.3;
 			@include margin(0.5em);
 		}
 		.projExRight{
-			text-align: justify;
-			flex: 0.75;
+			text-align: left;
+			flex: 0.7;
 			@include margin(0.5em);
+			ul {
+				padding: 0;
+			}
+			ul li {
+				list-style: none;
+			}
 		}
 		&:hover {
 			background-color: #E0E0E0;
