@@ -99,6 +99,7 @@ div, header, footer, section {
 .aboutMe {
 	.container {
 		justify-content: center;
+		text-align: center;
 	}
 }
 
@@ -114,7 +115,7 @@ div, header, footer, section {
 .mainContent {
 	flex-direction: column;
 	align-items: stretch;
-	.row, .projRow {
+	.row, .projRow, .skills-row {
 		display: flex;
 		flex-direction: row;
 		background-color: #fff;
@@ -132,12 +133,12 @@ div, header, footer, section {
 			flex: 0.5;
 			@include margin(0.5em);
 		}
-		.projExLeft{
+		.projExLeft, .skills-left{
 			text-align: left;
 			flex: 0.3;
 			@include margin(0.5em);
 		}
-		.projExRight{
+		.projExRight, .skills-right{
 			text-align: left;
 			flex: 0.7;
 			@include margin(0.5em);
@@ -171,6 +172,12 @@ div, header, footer, section {
 			ul {
 				list-style: none;
 			}
+		}
+	}
+
+	.skills-right > div{
+		div {
+			padding: 0 1rem 0 0;
 		}
 	}
 

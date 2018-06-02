@@ -75,7 +75,8 @@ div, header, footer, section {
   border-bottom: 1px solid #E0E0E0; }
 
 .aboutMe .container {
-  justify-content: center; }
+  justify-content: center;
+  text-align: center; }
 
 .sideBySideWrap {
   display: flex;
@@ -88,7 +89,7 @@ div, header, footer, section {
   flex-direction: column;
   align-items: stretch;
   padding: 0 2em; }
-  .mainContent .row, .mainContent .projRow {
+  .mainContent .row, .mainContent .projRow, .mainContent .skills-row {
     display: flex;
     flex-direction: row;
     background-color: #fff;
@@ -96,41 +97,41 @@ div, header, footer, section {
     -moz-margin: 0;
     -ms-margin: 0;
     margin: 0; }
-    .mainContent .row .expanded, .mainContent .projRow .expanded {
+    .mainContent .row .expanded, .mainContent .projRow .expanded, .mainContent .skills-row .expanded {
       background-color: #E0E0E0; }
-    .mainContent .row .left, .mainContent .projRow .left {
+    .mainContent .row .left, .mainContent .projRow .left, .mainContent .skills-row .left {
       text-align: left;
       flex: 0.5;
       -webkit-margin: 0.5em;
       -moz-margin: 0.5em;
       -ms-margin: 0.5em;
       margin: 0.5em; }
-    .mainContent .row .right, .mainContent .projRow .right {
+    .mainContent .row .right, .mainContent .projRow .right, .mainContent .skills-row .right {
       text-align: right;
       flex: 0.5;
       -webkit-margin: 0.5em;
       -moz-margin: 0.5em;
       -ms-margin: 0.5em;
       margin: 0.5em; }
-    .mainContent .row .projExLeft, .mainContent .projRow .projExLeft {
+    .mainContent .row .projExLeft, .mainContent .row .skills-left, .mainContent .projRow .projExLeft, .mainContent .projRow .skills-left, .mainContent .skills-row .projExLeft, .mainContent .skills-row .skills-left {
       text-align: left;
       flex: 0.3;
       -webkit-margin: 0.5em;
       -moz-margin: 0.5em;
       -ms-margin: 0.5em;
       margin: 0.5em; }
-    .mainContent .row .projExRight, .mainContent .projRow .projExRight {
+    .mainContent .row .projExRight, .mainContent .row .skills-right, .mainContent .projRow .projExRight, .mainContent .projRow .skills-right, .mainContent .skills-row .projExRight, .mainContent .skills-row .skills-right {
       text-align: left;
       flex: 0.7;
       -webkit-margin: 0.5em;
       -moz-margin: 0.5em;
       -ms-margin: 0.5em;
       margin: 0.5em; }
-      .mainContent .row .projExRight ul, .mainContent .projRow .projExRight ul {
+      .mainContent .row .projExRight ul, .mainContent .row .skills-right ul, .mainContent .projRow .projExRight ul, .mainContent .projRow .skills-right ul, .mainContent .skills-row .projExRight ul, .mainContent .skills-row .skills-right ul {
         padding: 0; }
-      .mainContent .row .projExRight ul li, .mainContent .projRow .projExRight ul li {
+      .mainContent .row .projExRight ul li, .mainContent .row .skills-right ul li, .mainContent .projRow .projExRight ul li, .mainContent .projRow .skills-right ul li, .mainContent .skills-row .projExRight ul li, .mainContent .skills-row .skills-right ul li {
         list-style: none; }
-    .mainContent .row:hover, .mainContent .projRow:hover {
+    .mainContent .row:hover, .mainContent .projRow:hover, .mainContent .skills-row:hover {
       background-color: #E0E0E0; }
   .mainContent .skillsWrap {
     flex-direction: row;
@@ -148,6 +149,8 @@ div, header, footer, section {
         padding: 0 0 0 2em; }
       .mainContent .skillsWrap .skillsColumn ul {
         list-style: none; }
+  .mainContent .skills-right > div div {
+    padding: 0 1rem 0 0; }
 
 .expansion {
   display: none;
